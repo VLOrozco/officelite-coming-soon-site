@@ -17,8 +17,6 @@ This is a solution to the [Officelite coming soon site challenge on Frontend Men
   - [- Live Site URL: Officelite Coming Soon Site](#--live-site-url-officelite-coming-soon-site)
   - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
