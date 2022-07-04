@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- BACKGROUND-PATTERN -->
   <div id="bg-pattern-header"></div>
-
+  <!-- LOGO -->
   <img src="./assets/shared/logo.svg" alt="officelite logo" id="logo">
-
+  <!-- HEADER -->
   <header id="office-lite-home">
     <img src="./assets/home/illustration-charts.svg" alt="">
     <div class="header-txt">
@@ -24,33 +25,45 @@
     </div>
   </header>
 
+  <!-- MAIN SECTION | PRICING CARDS | GRID -->
+  <main id="main">
+    <div id="card1" class="card">
+      <h2>Basic</h2>
+      <h3 class="price-txt">Free</h3>
+      <p class="user-info">Up to 5 users for free</p>
+      <div id="pricing-info1">
+        <p class="pricing-info">Basic document collaboration</p>
+        <p class="pricing-info">2 gb storage</p>
+        <p class="pricing-info">Great security and support</p>
+        <button class="try-for-free">Try for Free</button>
+      </div>
+    </div>
 
+    <!-- bg-pattern-pricing assets/home/bg-pattern-pricing.svg -->
+    <div id="card2" class="card bg-pattern-pricing">
+      <h2>Pro</h2>
+      <h3 class="price-txt">$9.99</h3>
+      <p class="user-info">Per user, billed monthly</p>
+      <div id="pricing-info2">
+        <p class="pricing-info">All essential integrations</p>
+        <p class="pricing-info">50 gb storage</p>
+        <p class="pricing-info">More control and insights</p>
+        <button class="try-for-free">Try for Free</button>
+      </div>
+    </div>
 
-
-
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
-
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
-
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
+    <div id="card3" class="card">
+      <h2>Ultimate</h2>
+      <h3 class="price-txt">$19.99</h3>
+      <p class="user-info">Per user, billed monthly</p>
+      <div id="pricing-info3"></div>
+        <p class="pricing-info">Robust work management</p>
+        <p class="pricing-info">100 gb storage</p>
+        <p class="pricing-info">VIP support</p>
+        <button class="try-for-free">Try for Free</button>
+      </div>
+    </div>
+  </main>
 
   <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
   Coming 4 Nov 2020
