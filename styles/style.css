@@ -1,0 +1,330 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ========================================================================= */
+
+
+/* TABLE OF CONTENTS */
+/* 
+1. GLOBAL
+2. TYPOGRAPHY
+3. LAYOUT
+4. COMPONENTS | BUTTONS & ACTIVE/HOVER STATES
+5. MEDIA QUERIES
+*/
+
+
+
+/* ========================================================================= */
+
+/* 1. GLOBAL */
+body {
+  background-color: rgba(250, 250, 250, 1);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: rgba(51, 57, 80, 1);
+  text-align: center;
+
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+
+/* ========================================================================= */
+
+/* 2. TYPOGRAPHY */
+#coming-soon,
+#countdown-timer {
+  color: rgba(255, 255, 255, 1);
+}
+
+#header-title,
+.price-title,
+.price-txt,
+#coming-soon,
+.countdown,
+.time-txt {
+  font-weight: 700;
+}
+
+#header-title {
+  font-size: 40px;
+  line-height: 48px;
+}
+#header-p {
+  color: rgba(116, 123, 149, 1);
+}
+
+.price-title {
+  font-size: 20px;
+  line-height: 28px;
+}
+  .price-txt {
+    font-size: 56px;
+    line-height: 64px;
+  }
+.user-info {
+  line-height: 28px;
+}
+.pricing-info {
+  color: rgba(116, 123, 149, 1);
+  line-height: 28px;
+}
+.card2 {
+  color: rgba(255, 255, 255, 1);
+}
+#pricing-info2 > .pricing-info {
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.75;
+}
+
+#coming-soon {
+  text-transform: uppercase;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#future-date {
+  color: rgb(81, 117, 255);
+}
+
+.countdown {
+  font-size: 32px;
+  line-height: 48px;
+}
+.time-txt {
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+/* ========================================================================= */
+
+/* 3. LAYOUT */
+/* FLEXBOX */
+#office-lite-home,
+#main,
+#date-comingSoon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#coming-soon,
+#countdown-timer {
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* STANDARD LAYOUT */
+#bg-pattern-header {
+  position: relative;
+  background-image: url('../assets/home/bg-pattern-header.svg');
+  width: 458px;
+  height: 458px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -50px;
+  top: -169px;
+  margin-bottom: 600px;
+}
+
+#logo {
+  position: absolute;
+  width: 155px;
+  margin-top: 48px;
+  margin-bottom: 50px;
+  margin-left: 110px;
+}
+
+#office-lite-home {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 158px;
+}
+  #header-illustration {
+    width: 171px;
+    height: 218px;
+  }
+  .header-txt {
+    width: 327px;
+    margin: 64px 24px 24px 24px;
+    position: relative;
+    top: -53.55px;
+  }
+  #header-p {
+    margin-top: -3px;
+    margin-bottom: 12px;
+  }
+
+
+#main {
+  width: 328px;
+  height: 1588px;
+  margin: auto;
+}
+
+#card1, #card2, #card3 {
+  height: 430px;
+  width: 327px;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  margin-bottom: 64px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+  #card1 {
+    margin-top: -165px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  #card2 {
+    background-color: rgba(81, 117, 255, 1);
+    background-image: url('../assets/home/bg-pattern-pricing.svg');
+    background-position: bottom center;
+    margin-top: -33px;
+  }
+  #card3 {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+.price-title {
+  margin-top: -2px;
+}
+.price-txt {
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+.user-info {
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+.pricing-info {
+  margin-bottom: 17px;
+}
+
+
+#date-comingSoon {
+  margin-top: -32px;
+  margin-bottom: 68px;
+  height: 254px;
+  width: 328px;
+  align-self: center;
+}
+
+#coming-soon {
+  height: 48px;
+  display: flex;
+}
+  #future-date {
+    margin-left: 10px;
+  }
+
+#countdown-timer {
+  height: 92px;
+  width: 328px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+  .box {
+    background-color: rgba(51, 57, 80, 1);
+    border-radius: 4px;
+    height: 92px;
+    width: 72px;
+  }
+  .countdown {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  .time-txt {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+#bg-color-footer {
+  height: 1248px;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(37, 41, 58, 1);
+  z-index: -1;
+  bottom: 0;
+  padding-bottom: 80px;
+
+}
+#bg-pattern-footer {
+  height: 1300px;
+  width: 100%;
+  position: absolute;
+  background-image: url('../assets/home/bg-pattern-footer.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  object-fit: contain;
+}
+
+/* ========================================================================= */
+
+/* 4. COMPONENTS | BUTTONS & ACTIVE/HOVER STATES */
+
+/* BUTTONS */
+#btn1, #btn5 {
+  height: 56px;
+  width: 171px;
+  background: 
+  rgba(81, 117, 255, 1);
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  border-radius: 28px;
+  border: none;
+  margin-top: 12px;
+}
+  .btn-txt {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+#btn2, #btn3, #btn4 {
+  height: 56px;
+  width: 171px;
+  background: rgba(81, 117, 255, 0.15);
+  mix-blend-mode: normal;
+  border-radius: 28px;
+  border: none;
+}
+  #btn2, #btn3, #btn4 {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  .try-for-free {
+    color: rgba(81, 117, 255, 1);
+    font-weight: 700;
+    line-height: 28px;
+  }
+#btn3 {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/* ========================================================================= */
+
+/* 5. MEDIA QUERIES */
