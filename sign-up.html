@@ -63,11 +63,15 @@
     <label for="email">Email Address:</label>
     <input type="email" id="email" class="form-placeh" name="email" placeholder="Email Address"></input>
     <label for="pack">Choose a pack:</label>
-    <select name="pack" id="pack" class="form-placeh select">
-      <option value="basic" class="option">Basic Pack <span class="pricing">Free</span></option>
-      <option value="pro" class="option">Pro Pack <span class="pricing">$9.99</span></option>
-      <option value="ultimate" class="option">Ultimate Pack <span class="pricing">$19.99</span></option>
-    </select>
+    <div name="pack" id="pack" class="form-placeh select">
+      <div value="basic" class="option option1">Basic Pack <span class="pricing default">Free</span></div>
+      <!-- <i class="fa-solid fa-angle-down"></i> -->
+      <!-- <i class="fa-solid fa-check"></i> -->
+      <div value="pro" class="option">Pro Pack <span class="pricing">$9.99</span></div>
+      <!-- <i class="fa-solid fa-check"></i> -->
+      <div value="ultimate" class="option">Ultimate Pack <span class="pricing">$19.99</span></div>
+      <!-- <i class="fa-solid fa-check"></i> -->
+    </div>
     <label for="phone">Phone Number:</label>
     <input type="text" id="phone" class="form-placeh" name="phone" placeholder="Phone Number"></input>
     <label for="company">Company:</label>

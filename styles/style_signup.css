@@ -108,6 +108,7 @@ label {
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
   padding-left: 24px;
+  padding-right: 0;
 }
 
 .form-placeh, .option {
@@ -125,6 +126,32 @@ label {
 
 .pricing {
   margin-left: 10px !important;
+}
+
+  .pricing:hover, 
+  .pricing:focus {
+    content: url('../assets/sign-up/check-solid.svg');
+    position: absolute;
+    top: 2px;
+    right: 20px;
+  }
+.default::after {
+  content: url('../assets/sign-up/angle-down.svg');
+  position: relative;
+  right: -120px;
+}
+
+.option1 {
+  position: relative;
+}
+.option {
+  position: relative;
+  margin-left: 0;
+}
+
+div.select {
+  border: none;
+  margin-bottom: -14px;
 }
 
 #submit {
