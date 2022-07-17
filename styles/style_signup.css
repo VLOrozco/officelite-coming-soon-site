@@ -45,19 +45,22 @@
   text-align: left;
   color: rgb(116, 123, 149);
 }
-select.form-placeh {
+.form-placeh {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: rgb(51, 57, 80);
 }
-select option span.pricing {
+.fontColor {
+  color: rgba(51, 57, 80, 1);
+}
+.pricing {
   color: rgba(51, 57, 80, 0.4);
 }
 /* option {
   color: rgba(81, 117, 255, 1);
 } */
-input {
-  color: rgba(51, 57, 80, 1) !important;
+.input {
+  color: rgba(51, 57, 80, 1);
 }
 
 
@@ -123,31 +126,51 @@ label {
   background-color: transparent;
   cursor: pointer;
 }
+/* prep for onclick display: block */
+#selections {
+  display: none;
+  height: 198px;
+  width: 280px;
+  background-color:rgb(255, 255, 255);
+  position: absolute;
+  border: 1px solid rgba(51, 57, 80, 0.153273);
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.747077);
+  border-radius: 8px;
+  padding: 15px 12px 8px 14px;
+  margin-left: -15px;
+  margin-top: -20px;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(81, 117, 255);
+}
 
 .pricing {
   margin-left: 10px !important;
+  cursor: pointer;
 }
-
-  .pricing:hover, 
-  .pricing:focus {
+/* prep for onclick() display: block w/js */
+  .pricing::after {
+    display: none;
     content: url('../assets/sign-up/check-solid.svg');
     position: absolute;
     top: 2px;
-    right: 20px;
+    right: 30px;
   }
 .default::after {
   content: url('../assets/sign-up/angle-down.svg');
   position: relative;
-  right: -120px;
+  right: -130px;
 }
-
-.option1 {
-  position: relative;
-}
-.option {
-  position: relative;
-  margin-left: 0;
-}
+  .option1 {
+    position: relative;
+    /* margin-top: 80px; */
+  }
+  .option {
+    position: relative;
+    margin-left: 0;
+  }
 
 div.select {
   border: none;
@@ -161,6 +184,16 @@ div.select {
   background: rgb(81, 117, 255);
   border-radius: 28px;
   cursor: pointer;
+}
+/* refactor .err-circle for email address, include in verification */
+#err-circle {
+  opacity: 0;
+}
+#err-circle::after {
+  content: url('../assets/sign-up/circle-xmark-solid.svg');
+  position: absolute;
+  right: 74px;
+  margin-top: -70px;
 }
 
 /* ================================================================= */
