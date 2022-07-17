@@ -6,31 +6,81 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
-    <title>Frontend Mentor | Officelite coming soon site</title>
+  <title>Frontend Mentor | Officelite coming soon site</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/style_signup.css">
 </head>
 <body>
-  Work smarter. Save time.
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+  <!-- BACKGROUND-PATTERN -->
+  <div id="bg-pattern-header"></div>
+  <!-- LOGO -->
+  <img src="./assets/shared/logo.svg" alt="officelite logo" id="logo">
+  <!-- HEADER -->
+  <header id="office-lite-home">
+    <div class="header-txt header-txt2">
+      <h1 id="header-title" role="banner">Work smarter. Save time.</h1>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+      <p id="header-p" class="header-p2" role="complementary">Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+    </div>
+  </header>
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
 
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
+  <section id="date-comingSoon">
+    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+    <div id="coming-soon">
+      Coming <div id="future-date">4 NOV 2020</div>
+    </div>
+
+    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+    <div id="countdown-timer" role="timer" >
+      <div class="box">
+        <div id="days" class="countdown">47</div>
+        <p class="days time-txt">days</p>
+      </div>
+
+      <div class="box">
+        <div id="hours" class="countdown">07</div>
+        <p class="hours time-txt">hours</p>
+      </div>
+
+      <div class="box">
+        <div id="min" class="countdown">56</div>
+        <p class="min time-txt">min</p>
+      </div>
+
+      <div class="box">
+        <div id="sec" class="countdown">14</div>
+        <p class="sec time-txt">sec</p>
+      </div>
+    </div>
+
+  </section>
+  <!-- FORM  -->
+  <form action="../pages/list_page.php" id="form" class="form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" class="form-placeh" name="name" placeholder="Name"></input>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" class="form-placeh" name="email" placeholder="Email Address"></input>
+    <label for="pack">Choose a pack:</label>
+    <select name="pack" id="pack" class="form-placeh select">
+      <option value="basic" class="option">Basic Pack <span class="pricing">Free</span></option>
+      <option value="pro" class="option">Pro Pack <span class="pricing">$9.99</span></option>
+      <option value="ultimate" class="option">Ultimate Pack <span class="pricing">$19.99</span></option>
+    </select>
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" class="form-placeh" name="phone" placeholder="Phone Number"></input>
+    <label for="company">Company:</label>
+    <input type="text" id="company" class="form-placeh" name="company" placeholder="Company"></input>
+
+    <button type="submit" value="submit" id="submit" class="btn">Get on the list</button>
+  </form>
+
+
+  <!-- BACKGROUND-PATTERN -->
+  <!-- <footer id="bg-color-footer" class="signup-footer">
+  <div id="bg-pattern-footer" class="bg-pattern-ft2"></div>
+  </footer> -->
+
 </body>
 </html>
