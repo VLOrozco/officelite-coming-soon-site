@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Officelite coming soon site</title>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/style_signup.css">
+  <script defer src="./js/sign-up.js"></script>
 </head>
 <body>
 
@@ -57,29 +58,37 @@
 
   </section>
   <!-- FORM  -->
-  <form action="../pages/list_page.php" id="form" class="form">
+  <form action="#" id="form" class="form" name="form">
+    <!-- NAME  -->
     <label for="name">Name:</label>
-    <input type="text" id="name" class="form-placeh" name="name" placeholder="Name"></input>
+    <input type="text" id="name" class="form-placeh input" name="name" placeholder="Name" required></input>
+    <!-- EMAIL  -->
     <label for="email">Email Address:</label>
-    <input type="email" id="email" class="form-placeh" name="email" placeholder="Email Address"></input>
+    <input type="email" id="email" class="form-placeh err-border input" name="email" placeholder="Email Address" required> <span id="err-circle"></span> </input>
+    <!-- PACK  -->
     <label for="pack">Choose a pack:</label>
-    <div name="pack" id="pack" class="form-placeh select">
-      <div value="basic" class="option option1">Basic Pack <span class="pricing default">Free</span></div>
-      <!-- <i class="fa-solid fa-angle-down"></i> -->
-      <!-- <i class="fa-solid fa-check"></i> -->
-      <div value="pro" class="option">Pro Pack <span class="pricing">$9.99</span></div>
-      <!-- <i class="fa-solid fa-check"></i> -->
-      <div value="ultimate" class="option">Ultimate Pack <span class="pricing">$19.99</span></div>
-      <!-- <i class="fa-solid fa-check"></i> -->
+    <div name="pack" id="pack" class="form-placeh select"  required>
+      <div value="basic" class="option option1"><span class="fontColor">Basic Pack</span> <span class="default">Free</span></div>
+      <div id="selections">
+        <div value="basic" class="option input"><span class="fontColor">Basic Pack</span> <span class="pricing">Free</span></div>
+        <!-- <i class="fa-solid fa-angle-down"></i> -->
+        <!-- <i class="fa-solid fa-check"></i> -->
+        <div value="pro" class="option input"> <span class="fontColor">Pro Pack</span> <span class="pricing">$9.99</span></div>
+        <!-- <i class="fa-solid fa-check"></i> -->
+        <div value="ultimate" class="option input"><span class="fontColor">Ultimate Pack</span> <span class="pricing">$19.99</span></div>
+        <!-- <i class="fa-solid fa-check"></i> -->
+      </div>
     </div>
+    <!-- PHONE NUMBER  -->
     <label for="phone">Phone Number:</label>
-    <input type="text" id="phone" class="form-placeh" name="phone" placeholder="Phone Number"></input>
+    <input type="text" id="phone" class="form-placeh input" name="phone" placeholder="Phone Number" required></input>
+    <!-- COMPANY  -->
     <label for="company">Company:</label>
-    <input type="text" id="company" class="form-placeh" name="company" placeholder="Company"></input>
+    <input type="text" id="company" class="form-placeh input" name="company" placeholder="Company" required></input>
 
-    <button type="submit" value="submit" id="submit" class="btn">Get on the list</button>
+    <button type="submit" value="submit" id="submit" class="btn" onclick="ValidateEmail(document.form.email)">Get on the list</button>
+    <div id="validation"></div>
   </form>
-
 
   <!-- BACKGROUND-PATTERN -->
   <!-- <footer id="bg-color-footer" class="signup-footer">
