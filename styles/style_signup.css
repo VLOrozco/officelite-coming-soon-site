@@ -1,0 +1,140 @@
+/* ================================================================= */
+/* TABLE OF CONTENTS */
+/*
+1.RESET STYLES
+2. TYPOGRAPHY
+3. LAYOUT
+4. MEDIA QUERIES
+*/
+
+
+/* ================================================================= */
+/* 1. RESET STYLES */
+
+.signup-footer {
+  display: none;
+}
+.bg-pattern-ft2 {
+  display: none;
+}
+
+
+/* ================================================================= */
+/* 2. TYPOGRAPHY */
+#coming-soon {
+  color: #333950;
+}
+.box {
+  background-color: rgba(81, 117, 255, 0.1);
+}
+.countdown {
+  color: rgba(81, 117, 255, 1);
+}
+.time-txt {
+  color: rgb(51, 57, 80);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+/* FORM | TYPOGRAPHY */
+.form-placeh, .option {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: rgb(116, 123, 149);
+}
+select.form-placeh {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(51, 57, 80);
+}
+select option span.pricing {
+  color: rgba(51, 57, 80, 0.4);
+}
+/* option {
+  color: rgba(81, 117, 255, 1);
+} */
+input {
+  color: rgba(51, 57, 80, 1) !important;
+}
+
+
+#submit {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+/* ================================================================= */
+/* 3. LAYOUT */
+.header-txt2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.header-p2 {
+  margin-top: -8px !important;
+  margin-bottom: 0px !important;
+}
+
+#bg-pattern-header {
+  margin-bottom: 35.5px;
+}
+
+/* FORM | LAYOUT */
+label {
+  display: none;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: -100px;
+}
+
+.form {
+  height: 465px;
+  width: 327px;
+  background: #FFFFFF;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  padding-left: 24px;
+}
+
+.form-placeh, .option {
+  width: 279px;
+  margin-bottom: 24px;
+  border: none;
+  border-bottom: 1px solid rgba(116, 123, 149, 0.5);
+  padding-bottom: 16px;
+}
+.select {
+  width: 287px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pricing {
+  margin-left: 10px !important;
+}
+
+#submit {
+  height: 56px;
+  width: 279px;
+  border-radius: 28px;
+  background: rgb(81, 117, 255);
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+/* ================================================================= */
+/* 4. MEDIA QUERIES */
