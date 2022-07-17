@@ -7,7 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Officelite coming soon site</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="./js/main2.js"></script>
 </head>
 <body>
   <!-- BACKGROUND-PATTERN -->
@@ -16,63 +17,93 @@
   <img src="./assets/shared/logo.svg" alt="officelite logo" id="logo">
   <!-- HEADER -->
   <header id="office-lite-home">
-    <img src="./assets/home/illustration-charts.svg" alt="">
-    <div class="header-txt">
-      <h1 id="header-title">A simple solution to complex tasks is coming soon</h1>
+    <img id="header-illustration" src="./assets/home/illustration-charts.svg" alt="illustration charts">
 
-      <p id="header-p">Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new collaboration platform built with an intuitive interface to improve productivity.</p>
-      <button id="btn1" class="get-started-btn btn"><a href="sign-up.html">Get Started</a></button>
+    <div class="header-txt">
+      <h1 id="header-title" role="banner">A simple solution to complex tasks is coming soon</h1>
+
+      <p id="header-p" role="complementary">Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new collaboration platform built with an intuitive interface to improve productivity.</p>
+      <button type="button" id="btn1" class="get-started-btn btn"><a class="btn-txt" href="sign-up.html">Get Started</a></button>
     </div>
   </header>
 
   <!-- MAIN SECTION | PRICING CARDS | GRID -->
   <main id="main">
-    <div id="card1" class="card">
-      <h2>Basic</h2>
+    <!-- CARD 1 -->
+    <div role="complementary" id="card1" class="card">
+      <h2 class="price-title">Basic</h2>
       <h3 class="price-txt">Free</h3>
       <p class="user-info">Up to 5 users for free</p>
       <div id="pricing-info1">
         <p class="pricing-info">Basic document collaboration</p>
-        <p class="pricing-info">2 gb storage</p>
+        <p class="pricing-info">2 GB storage</p>
         <p class="pricing-info">Great security and support</p>
-        <button class="try-for-free">Try for Free</button>
+        <button type="button" id="btn2" class="try-for-free">Try for Free</button>
       </div>
     </div>
 
-    <!-- bg-pattern-pricing assets/home/bg-pattern-pricing.svg -->
-    <div id="card2" class="card bg-pattern-pricing">
-      <h2>Pro</h2>
-      <h3 class="price-txt">$9.99</h3>
-      <p class="user-info">Per user, billed monthly</p>
+    <!-- CARD 2 -->
+    <div role="complementary" id="card2" class="card bg-pattern-pricing">
+      <h2 class="price-title card2">Pro</h2>
+      <h3 class="price-txt card2">$9.99</h3>
+      <p class="user-info card2">Per user, billed monthly</p>
       <div id="pricing-info2">
-        <p class="pricing-info">All essential integrations</p>
-        <p class="pricing-info">50 gb storage</p>
-        <p class="pricing-info">More control and insights</p>
-        <button class="try-for-free">Try for Free</button>
+        <p class="pricing-info card2">All essential integrations</p>
+        <p class="pricing-info card2">50 GB storage</p>
+        <p class="pricing-info card2">More control and insights</p>
+        <button type="button" id="btn3" class="try-for-free">Try for Free</button>
       </div>
     </div>
 
-    <div id="card3" class="card">
-      <h2>Ultimate</h2>
+    <!-- CARD 3 -->
+    <div role="complementary" id="card3" class="card">
+      <h2 class="price-title">Ultimate</h2>
       <h3 class="price-txt">$19.99</h3>
       <p class="user-info">Per user, billed monthly</p>
       <div id="pricing-info3"></div>
         <p class="pricing-info">Robust work management</p>
-        <p class="pricing-info">100 gb storage</p>
+        <p class="pricing-info">100 GB storage</p>
         <p class="pricing-info">VIP support</p>
-        <button class="try-for-free">Try for Free</button>
+        <button type="button" id="btn4" class="try-for-free">Try for Free</button>
       </div>
     </div>
   </main>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+  <footer id="date-comingSoon">
+    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+    <div id="coming-soon">
+      Coming <div id="future-date">4 NOV 2020</div>
+    </div>
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
+    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+    <div id="countdown-timer" role="timer" >
+      <div class="box">
+        <div id="days" class="countdown">47</div>
+        <p class="days time-txt">days</p>
+      </div>
+
+      <div class="box">
+        <div id="hours" class="countdown">07</div>
+        <p class="hours time-txt">hours</p>
+      </div>
+
+      <div class="box">
+        <div id="min" class="countdown">56</div>
+        <p class="min time-txt">min</p>
+      </div>
+
+      <div class="box">
+        <div id="sec" class="countdown">14</div>
+        <p class="sec time-txt">sec</p>
+      </div>
+    </div>
+
+    <button type="button" id="btn5" class="get-started-btn btn"><a class="btn-txt" href="sign-up.html">Get Started</a></button>
+  </footer>
+  <!-- BACKGROUND-PATTERN -->
+  <div id="bg-color-footer">
+  <div id="bg-pattern-footer"></div>
+  </div>
+
 </body>
 </html>
