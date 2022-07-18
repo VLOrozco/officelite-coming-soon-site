@@ -1,26 +1,14 @@
 /* ================================================================= */
 /* TABLE OF CONTENTS */
 /*
-1.RESET STYLES
-2. TYPOGRAPHY
-3. LAYOUT
-4. MEDIA QUERIES
+1. TYPOGRAPHY
+2. LAYOUT
+3. MEDIA QUERIES
 */
 
 
 /* ================================================================= */
-/* 1. RESET STYLES */
-
-.signup-footer {
-  display: none;
-}
-.bg-pattern-ft2 {
-  display: none;
-}
-
-
-/* ================================================================= */
-/* 2. TYPOGRAPHY */
+/* 1. TYPOGRAPHY */
 #coming-soon {
   color: #333950;
 }
@@ -71,7 +59,17 @@
 }
 
 /* ================================================================= */
-/* 3. LAYOUT */
+/* 2. LAYOUT */
+body {
+  height: 100vh;
+}
+html {
+  width: 100%;
+  height: 100vh;
+}
+#bg-pattern-header {
+  margin-bottom: 35.5px;
+}
 .header-txt2 {
   margin-top: 20px;
   margin-bottom: 0;
@@ -81,8 +79,8 @@
   margin-bottom: 0px !important;
 }
 
-#bg-pattern-header {
-  margin-bottom: 35.5px;
+#date-comingSoon {
+  margin: -72px 0 10px 0 !important;
 }
 
 /* FORM | LAYOUT */
@@ -94,17 +92,16 @@ label {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: auto;
-  margin-top: -100px;
-}
-.form {
+  align-self: center;
   height: 465px;
   width: 327px;
+  margin: 0 !important;
+}
+.form {
   background: rgb(255, 255, 255);
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
-  padding-left: 24px;
-  padding-right: 0;
+  padding-left: 26px;
 }
 
 .form-placeh, .option {
@@ -114,6 +111,10 @@ label {
   border-bottom: 1px solid rgba(116, 123, 149, 0.5);
   padding-bottom: 16px;
 }
+  .input:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(81, 117, 255);
+  }
 .select {
   width: 287px;
   background-color: transparent;
@@ -133,12 +134,6 @@ label {
   margin-left: -15px;
   margin-top: -20px;
 }
-
-.input:focus {
-  outline: none;
-  border-bottom: 1px solid rgb(81, 117, 255);
-}
-
 .pricing {
   margin-left: 10px !important;
   cursor: pointer;
@@ -175,6 +170,7 @@ label {
   background: rgb(81, 117, 255);
   border-radius: 28px;
   cursor: pointer;
+  margin-top: 17px;
 }
 
 #err-circle {
@@ -187,5 +183,19 @@ label {
   margin-top: -70px;
 }
 
+/* FOOTER BG IMG */
+#bg-color-footer {
+  height: 320px;
+  padding-bottom: 0 !important;
+}
+#bg-pattern-footer {
+  height: 100%;
+  background-position: center 43.4%;
+  transform: rotate(180deg);
+}
+.sign-up-ft {
+  position: absolute;
+  bottom: 770px !important;
+}
 /* ================================================================= */
-/* 4. MEDIA QUERIES */
+/* 3. MEDIA QUERIES */
