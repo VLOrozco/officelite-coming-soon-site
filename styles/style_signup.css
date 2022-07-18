@@ -56,14 +56,9 @@
 .pricing {
   color: rgba(51, 57, 80, 0.4);
 }
-/* option {
-  color: rgba(81, 117, 255, 1);
-} */
 .input {
   color: rgba(51, 57, 80, 1);
 }
-
-
 #submit {
   font-family: 'Kumbh Sans';
   font-style: normal;
@@ -94,7 +89,6 @@
 label {
   display: none;
 }
-
 #form {
   display: flex;
   flex-direction: column;
@@ -103,11 +97,10 @@ label {
   margin: auto;
   margin-top: -100px;
 }
-
 .form {
   height: 465px;
   width: 327px;
-  background: #FFFFFF;
+  background: rgb(255, 255, 255);
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
   padding-left: 24px;
@@ -126,13 +119,13 @@ label {
   background-color: transparent;
   cursor: pointer;
 }
-/* prep for onclick display: block */
+/* prep for onclick display: block w/js*/
 #selections {
   display: none;
   height: 198px;
   width: 280px;
-  background-color:rgb(255, 255, 255);
   position: absolute;
+  background-color:rgb(255, 255, 255);
   border: 1px solid rgba(51, 57, 80, 0.153273);
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.747077);
   border-radius: 8px;
@@ -165,17 +158,15 @@ label {
 }
   .option1 {
     position: relative;
-    /* margin-top: 80px; */
   }
   .option {
     position: relative;
     margin-left: 0;
   }
-
-div.select {
-  border: none;
-  margin-bottom: -14px;
-}
+  div.select {
+    border: none;
+    margin-bottom: -14px;
+  }
 
 #submit {
   height: 56px;
@@ -185,7 +176,7 @@ div.select {
   border-radius: 28px;
   cursor: pointer;
 }
-/* refactor .err-circle for email address, include in verification */
+
 #err-circle {
   opacity: 0;
 }
