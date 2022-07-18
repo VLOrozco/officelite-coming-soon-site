@@ -1,100 +1,53 @@
-const days = document.getElementById('days');
-const hours = document.getElementById('hours');
-const minutes = document.getElementById('min');
-const seconds = document.getElementById('sec');function goCountdown() {
-  //the final date   
-    // const fest = new Date(2022, 3, 2);
-  // the system date   
-  // const current = new Date();
-  var myCurrentDate = new Date();
-  var myFutureDate = new Date(myCurrentDate);
-      myFutureDate.setDate(myFutureDate.getDate() + 30);//myFutureDate is now 30 days in the future
+// current browser date
+var date = new Date();
+
+// 30 days from current date
+var futureDate = new Date(date.setDate(date.getDate() + 30));
 
 
-  //time remaining   
-  const sec = (myFutureDate - myCurrentDate) / 1000;
-  const d = Math.floor(sec / 3600 / 24);
-  const hrs = Math.floor(sec / 3600) % 24;
-  const min = Math.floor(sec / 60) % 60;
-  const s = Math.floor(sec) % 60;
-  days.innerText = d;
-  hours.innerText = hrs;
-  minutes.innerText = min;
-  seconds.innerText = s;
+function releaseDate() {
+  var comingSoon = document.getElementById('future-date');
+
+  var dateNum = futureDate.getDate();
+  var month = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEPT", "OCT", "NOV", "DEC"][futureDate.getMonth()];
+
+  var year = futureDate.getFullYear();
+
+  var comingSoonMsg = comingSoon.innerText = dateNum + ' ' + month + ' ' + year;
+
+  return comingSoonMsg;
 }
-// goCountdown().setInterval(goCountdown, 1000);
-
-setInterval(() => {
-  goCountdown();
-}, 200);
+releaseDate();
 
 
+function countdown() {
+  // get futureTime & now TIME in milliseconds and subtract to get the gap between both
+  var futureTime = new Date(futureDate).getTime();
+  var now = new Date().getTime();
+  const gap = futureTime - now;
 
-// setInterval(() => {
-  //   const now = new Date();
-  
-  //   timeElement.textContent = formatTime(now);
-  //   dateElement.textContent = formatDate(now);
-  // }, 200);
+  // establish in js how time works
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
 
+  const days = Math.floor(gap / day);
+  const hours = Math.floor((gap % day) / hour);
+  const minutes = Math.floor((gap % hour) / minute);
+  const seconds = Math.floor((gap % minute) / second);
 
-// function formatDate(date) {
-//   future.setDate(future.getDate() + 30);
-//   var futureDate = document.getElementById('future-date');
-//   return `${future}`;
-// }
+  // Get DOM elements & add to DOM to display countdown timer
+  var dayTxt = document.getElementById('days');
+  var hrsTxt = document.getElementById('hours');
+  var minTxt = document.getElementById('min');
+  var secTxt = document.getElementById('sec');
 
-
-
-
-
-// var future = new Date();
-// future.setDate(future.getDate() + 30);
-// var futureDate = document.getElementById('future-date');
-// let futureDate = `$(future)`
-// console.log(futureDate);
-
-
-
-
-////////////////////////////////////////////////////////////////
-
-
-
-// const timeElement = document.querySelector(".time");
-// const dateElement = document.querySelector(".date");
-
-/**
- * param {Date} date 
- */
-/*
-function formatTime(date) {
-  const hours12 = date.getHours() % 12 || 12;
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-
-  return `${hours12.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  dayTxt.innerText = days;
+  hrsTxt.innerText = hours;
+  minTxt.innerText = minutes;
+  secTxt.innerText = seconds;
 }
-*/
-
-
-/**
-// at param {Date} date 
- */
-/*
-function formatDate(date) {
-  const DAYS = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri","Sat"];
-  const MONTHS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-
-  return `${DAYS[date.getDay()]}, ${MONTHS[date.getMonth()]} ${date.getDate()} ${date.getFullYear()}`;
-}
-*/
-
-
-// setInterval(() => {
-//   const now = new Date();
-
-//   timeElement.textContent = formatTime(now);
-//   dateElement.textContent = formatDate(now);
-// }, 200);
-
+countdown();
+// setInterval(countdown, 1000);
+// delete countdown(); and remove comments from setInterval once page completed
