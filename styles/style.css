@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
 
   display: flex;
@@ -41,6 +41,7 @@ body {
 }
 
 html {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -221,11 +222,12 @@ html {
 
 
 #date-comingSoon {
-  margin-top: -32px;
-  margin-bottom: 68px;
+  display: flex;
+  align-self: center;
   height: 254px;
   width: 328px;
-  align-self: center;
+  margin-top: -32px;
+  margin-bottom: 68px;
 }
 
 #coming-soon {
@@ -267,7 +269,6 @@ html {
   z-index: -1;
   bottom: 0;
   padding-bottom: 80px;
-
 }
 #bg-pattern-footer {
   height: 1300px;
@@ -293,6 +294,7 @@ html {
   border-radius: 28px;
   border: none;
   margin-top: 12px;
+  cursor: pointer;
 }
   .btn-txt {
     text-decoration: none;
@@ -308,6 +310,7 @@ html {
   mix-blend-mode: normal;
   border-radius: 28px;
   border: none;
+  cursor: pointer;
 }
   #btn2, #btn3, #btn4 {
     margin-top: 16px;
