@@ -60,3 +60,28 @@ function ValidateEmail(inputText) {
     return this;
   }
 }
+
+
+// SUBMIT VERIFICATION
+
+//confirm all fields are provided
+
+// border-bottom red if empty input
+
+
+
+
+
+
+
+
+
+
+
+// ONCLICK PACKAGE SECTION
+
+// CARET UP ROTATE 180deg
+
+// FOR EACH    ONCLICK   SHOW CHECK(FOCUS)
+// PACKAGE SELECTED INPUTTEXT FOR DEFAULT
+
