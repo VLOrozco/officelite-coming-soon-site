@@ -11,6 +11,14 @@
   <link rel="stylesheet" href="./styles/style_signup.css">
   <script defer src="./js/main.js"></script>
   <script defer src="./js/sign-up.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".default_option").click(function(){
+        $(this).parent(".select_wrap").toggleClass("active");
+      })
+    });
+  </script>
 </head>
 <body>
 
@@ -66,21 +74,46 @@
     <input type="email" id="email" class="form-placeh err-border input" name="email" placeholder="Email Address" required> <span id="err-circle"></span> </input>
     <!-- PACK  -->
     <label for="pack">Choose a pack:</label>
-    <div name="pack" id="pack" class="form-placeh select"  required>
-      <div value="basic" class="option option1"><span class="fontColor">Basic Pack</span> <span class="default">Free</span></div>
-      <div id="selections">
-        <div value="basic" class="option input"><span class="fontColor">Basic Pack</span> <span class="pricing">Free</span></div>
-        <!-- <i class="fa-solid fa-angle-down"></i> -->
-        <!-- <i class="fa-solid fa-check"></i> -->
-        <div value="pro" class="option input"> <span class="fontColor">Pro Pack</span> <span class="pricing">$9.99</span></div>
-        <!-- <i class="fa-solid fa-check"></i> -->
-        <div value="ultimate" class="option input"><span class="fontColor">Ultimate Pack</span> <span class="pricing">$19.99</span></div>
-        <!-- <i class="fa-solid fa-check"></i> -->
-      </div>
+    <div name="pack" id="pack" class="select_wrap form-placeh select active"  required>
+      <ul value="basic" class="default_option option option1">
+        <li>
+          <div class="option-label basicPack">
+            <span class="fontColor">Basic Pack</span>
+            <span id="arrow" class="default pricingFree">Free</span>
+          </div>
+        </li>
+      </ul>
+
+      <ul id="selections" class="select_ul active">
+        <li>
+          <div value="basic" class="option-label option input basic">
+            <span class="fontColor">Basic Pack</span>
+            <span class="pricing showCheck">Free</span> <!-- change name for showCheck -->
+          </div>
+          <!-- <i class="fa-solid fa-angle-down"></i> -->
+          <!-- <i class="fa-solid fa-check"></i> -->
+        </li>
+        <li>
+          <div value="pro" class="option-label option input pro">
+            <span class="fontColor">Pro Pack</span>
+            <span class="pricing showCheck">$9.99</span> <!-- change name for showCheck -->
+          </div>
+          <!-- <i class="fa-solid fa-check"></i> -->
+        </li>
+        <li>
+          <div value="ultimate" class="option-label option input ultimate">
+            <span class="fontColor">Ultimate Pack</span> 
+            <span class="pricing showCheck">$19.99</span> <!-- change name for showCheck -->
+          </div>
+          <!-- <i class="fa-solid fa-check"></i> -->
+        </li>
+      </ul>
     </div>
+
     <!-- PHONE NUMBER  -->
     <label for="phone">Phone Number:</label>
     <input type="text" id="phone" class="form-placeh input" name="phone" placeholder="Phone Number" required></input>
+
     <!-- COMPANY  -->
     <label for="company">Company:</label>
     <input type="text" id="company" class="form-placeh input" name="company" placeholder="Company" required></input>
