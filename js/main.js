@@ -48,6 +48,6 @@ function countdown() {
   minTxt.innerText = minutes;
   secTxt.innerText = seconds;
 }
-countdown();
-// setInterval(countdown, 1000);
+// countdown();
+setInterval(countdown, 1000);
 // delete countdown(); and remove comments from setInterval once page completed
