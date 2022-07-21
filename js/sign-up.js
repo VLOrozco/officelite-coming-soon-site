@@ -64,6 +64,20 @@ function ValidateEmail(inputText) {
 const pack = document.getElementById('pack');
 
 pack.addEventListener('click', function displayOptions() {
-  const el = document.querySelector('.select_ul');
-  el.classList.toggle('active');
+  const toggleOptionMenu = document.querySelector('.select_ul');
+
+  toggleOptionMenu.classList.toggle('active');
+
+  // CHOOSE SELECTION
+  var optionsList = document.querySelectorAll('.select_ul li')
+
+  optionsList.forEach(o => {
+    o.addEventListener('click', () => {
+      var defaultOption = document.querySelector('.default_option li');
+      var dropdownArr = document.querySelector('.select_wrap');
+
+      defaultOption.innerHTML = o.querySelector(".option-label").innerHTML;
+      dropdownArr.classList.toggle("active");
+    })
+  });
 });
