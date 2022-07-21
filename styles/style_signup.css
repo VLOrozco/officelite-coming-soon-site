@@ -217,6 +217,9 @@ label {
   cursor: pointer;
   margin-top: 17px;
 }
+  #submit:hover, #submit:active {
+    background-color: rgb(130, 156, 255);
+  }
 
 #err-circle {
   opacity: 0;
