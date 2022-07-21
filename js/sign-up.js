@@ -24,7 +24,7 @@ function ValidateEmail(inputText) {
     "0";
     // styles become in focus for the document name="form" & name="email"
     document.form.email.focus();
-    return this;
+
   // email address valid
   } else if(inputText.value.match(mailformat)) {
     // response to valid input
@@ -38,7 +38,6 @@ function ValidateEmail(inputText) {
     emailValidation.style.marginTop = "0";
     // styles become in focus for the document name="form" & name="email"
     document.form.email.focus();
-    return this;
 
   //email address invalid
   } else {
@@ -57,31 +56,14 @@ function ValidateEmail(inputText) {
     emailValidation.style.marginTop = "0";
     // styles become in focus for the document name="form" & name="email"
     document.form.email.focus();
-    return this;
   }
 }
 
 
-// SUBMIT VERIFICATION
+// DROPDOWN SELECTION | EVENT LISTENER | CLICK
+const pack = document.getElementById('pack');
 
-//confirm all fields are provided
-
-// border-bottom red if empty input
-
-
-
-
-
-
-
-
-
-
-
-// ONCLICK PACKAGE SECTION
-
-// CARET UP ROTATE 180deg
-
-// FOR EACH    ONCLICK   SHOW CHECK(FOCUS)
-// PACKAGE SELECTED INPUTTEXT FOR DEFAULT
-
+pack.addEventListener('click', function displayOptions() {
+  const el = document.querySelector('.select_ul');
+  el.classList.toggle('active');
+});
