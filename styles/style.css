@@ -325,8 +325,20 @@ html {
   background-color: rgb(255, 255, 255);
 }
 
+/* HOVER & ACTIVE STATES */
+#btn1:hover, #btn5:hover,
+#btn1:active, #btn5:active {
+  background-color: rgb(130, 156, 255);
+}
+#btn2:hover, #btn4:hover,
+#btn2:active, #btn4:active,
+#btn2:focus, #btn4:focus {
+  background-color: rgba(81, 117, 255, 0.25);
+}
 
-
+#btn3:hover, #btn3:active, #btn3:focus {
+  color: rgb(130, 156, 255);
+}
 
 /* ========================================================================= */
 
