@@ -122,10 +122,9 @@ label {
 }
   .basicPack {
     position: relative;
-    top: 5px;
   }
 
-/* MENU DOWN ARROW */
+/* MENU DROPDOWN ARROW */
 .select_wrap .default_option::before {
   content: "";
   position: absolute;
@@ -133,6 +132,7 @@ label {
   left: 15.5em;
   height: 6px;
   width: 6px;
+  margin-top: -5px;
   border: 2px solid;
   border-color: transparent transparent #5175FF #5175FF;
   border-radius: 2px;
@@ -141,7 +141,8 @@ label {
   }
   .select_wrap.active .default_option::before {
     transform: rotate(-45deg);
-    top: 01em;
+    top: 1em;
+    margin-top: -10px;
     }
 
 /* SELECTIONS DROPDOWN MENU */
@@ -203,9 +204,6 @@ label {
   }
 
 /* OPTION DROPDOWN MENU */
-/* .basicPack {
-  margin-left: -12px;
-} */
 .option1 li {
   margin-left: -38px;
 }
