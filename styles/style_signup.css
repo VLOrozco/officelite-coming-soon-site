@@ -6,7 +6,9 @@
 3. MEDIA QUERIES
 */
 
-
+* {
+  list-style: none;
+}
 /* ================================================================= */
 /* 1. TYPOGRAPHY */
 #coming-soon {
@@ -33,19 +35,13 @@
   text-align: left;
   color: rgb(116, 123, 149);
 }
-.form-placeh {
-  font-size: 16px;
+.form-placeh, .fontColor, .input {
   font-weight: 600;
   color: rgb(51, 57, 80);
 }
-.fontColor {
-  color: rgba(51, 57, 80, 1);
-}
-.pricing {
+.pricing, .pricingFree {
+  font-weight: 600;
   color: rgba(51, 57, 80, 0.4);
-}
-.input {
-  color: rgba(51, 57, 80, 1);
 }
 #submit {
   font-family: 'Kumbh Sans';
@@ -93,17 +89,16 @@ label {
   justify-content: center;
   align-content: center;
   align-self: center;
+
   height: 465px;
   width: 327px;
   margin: 0 !important;
-}
-.form {
+  padding-left: 26px;
   background: rgb(255, 255, 255);
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
-  padding-left: 26px;
 }
-
+/* PLACEHOLDERS & INPUT */
 .form-placeh, .option {
   width: 279px;
   margin-bottom: 24px;
@@ -115,14 +110,42 @@ label {
     outline: none;
     border-bottom: 1px solid rgb(81, 117, 255);
   }
-.select {
+/* SELECTION WRAP */
+.select_wrap {
   width: 287px;
   background-color: transparent;
   cursor: pointer;
 }
-/* prep for onclick display: block w/js*/
+.default_option {
+  height: 36px;
+  margin-top: 2px;
+}
+  .basicPack {
+    position: relative;
+    top: 5px;
+  }
+
+/* MENU DOWN ARROW */
+.select_wrap .default_option::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 15.5em;
+  height: 6px;
+  width: 6px;
+  border: 2px solid;
+  border-color: transparent transparent #5175FF #5175FF;
+  border-radius: 2px;
+  transform: rotate(-225deg);
+  z-index: 100;
+  }
+  .select_wrap.active .default_option::before {
+    transform: rotate(-45deg);
+    top: 01em;
+    }
+
+/* SELECTIONS DROPDOWN MENU */
 #selections {
-  display: none;
   height: 198px;
   width: 280px;
   position: absolute;
@@ -133,35 +156,59 @@ label {
   padding: 15px 12px 8px 14px;
   margin-left: -15px;
   margin-top: -20px;
+  z-index: 5;
 }
+  .select_ul.active {
+    display: none;
+  }
+  .select_ul {
+    display: block;
+  }
+
+.select_wrap .select_ul li {
+  cursor: pointer;
+}
+
+/* OPTION LABEL */
+.select_ul .option-label:hover::before,
+.select_ul .option-label:active::before {
+  display: block;
+  content: url('../assets/sign-up/check-solid.svg');
+  position: absolute;
+  top: 2px;
+  right: 24px;
+}
+
+/* PRICE NUMBER */
 .pricing {
   margin-left: 10px !important;
   cursor: pointer;
 }
-/* prep for onclick() display: block w/js */
-  .pricing::after {
-    display: none;
-    content: url('../assets/sign-up/check-solid.svg');
-    position: absolute;
-    top: 2px;
-    right: 30px;
-  }
-.default::after {
-  content: url('../assets/sign-up/angle-down.svg');
-  position: relative;
-  right: -130px;
-}
   .option1 {
     position: relative;
-  }
-  .option {
+    width: 85%;
+  }  
+    .pricingFree {
+      margin-left: 10px;
+    }
+
+    .option {
     position: relative;
     margin-left: 0;
   }
+
   div.select {
     border: none;
     margin-bottom: -14px;
   }
+
+/* OPTION DROPDOWN MENU */
+/* .basicPack {
+  margin-left: -12px;
+} */
+.option1 li {
+  margin-left: -38px;
+}
 
 #submit {
   height: 56px;
