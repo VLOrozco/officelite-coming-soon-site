@@ -28,54 +28,73 @@
     </div>
   </header>
 
-  <!-- MAIN SECTION | PRICING CARDS | GRID -->
+  <!-- MAIN SECTION | PRICING CARDS | FLEXBOX -->
   <main id="main">
     <!-- CARD 1 -->
     <div role="complementary" id="card1" class="card">
-      <h2 class="price-title">Basic</h2>
-      <h3 class="price-txt">Free</h3>
-      <p class="user-info">Up to 5 users for free</p>
-      <div id="pricing-info1">
-        <p class="pricing-info">Basic document collaboration</p>
-        <p class="pricing-info">2 GB storage</p>
-        <p class="pricing-info">Great security and support</p>
+      <div class="card-header">
+        <h2 class="price-title">Basic</h2>
+        <h3 class="price-txt">Free</h3>
+        <p class="user-info">Up to 5 users for free</p>
+      </div>
+      <div class="card-body">
+        <div id="pricing-info1">
+          <p class="pricing-info">Basic document collaboration</p>
+          <p class="pricing-info">2 GB storage</p>
+          <p class="pricing-info">Great security and support</p>
+        </div>
+      </div>
+      <div class="card-btn">
         <button type="button" id="btn2" class="try-for-free">Try for Free</button>
       </div>
     </div>
 
     <!-- CARD 2 -->
     <div role="complementary" id="card2" class="card bg-pattern-pricing">
-      <h2 class="price-title card2">Pro</h2>
-      <h3 class="price-txt card2">$9.99</h3>
-      <p class="user-info card2">Per user, billed monthly</p>
-      <div id="pricing-info2">
-        <p class="pricing-info card2">All essential integrations</p>
-        <p class="pricing-info card2">50 GB storage</p>
-        <p class="pricing-info card2">More control and insights</p>
+      <div class="card-header">
+        <h2 class="price-title card2">Pro</h2>
+        <h3 class="price-txt card2">$9.99</h3>
+        <p class="user-info card2">Per user, billed monthly</p>
+      </div>
+      <div class="card-body">
+        <div id="pricing-info2">
+          <p class="pricing-info card2">All essential integrations</p>
+          <p class="pricing-info card2">50 GB storage</p>
+          <p class="pricing-info card2">More control and insights</p>
+        </div>
+      </div>
+      <div class="card-btn">
         <button type="button" id="btn3" class="try-for-free">Try for Free</button>
       </div>
     </div>
 
     <!-- CARD 3 -->
     <div role="complementary" id="card3" class="card">
-      <h2 class="price-title">Ultimate</h2>
-      <h3 class="price-txt">$19.99</h3>
-      <p class="user-info">Per user, billed monthly</p>
-      <div id="pricing-info3"></div>
-        <p class="pricing-info">Robust work management</p>
-        <p class="pricing-info">100 GB storage</p>
-        <p class="pricing-info">VIP support</p>
+      <div class="card-header">
+        <h2 class="price-title">Ultimate</h2>
+        <h3 class="price-txt">$19.99</h3>
+        <p class="user-info">Per user, billed monthly</p>
+      </div>
+      <div class="card-body">
+        <div id="pricing-info3">
+          <p class="pricing-info">Robust work management</p>
+          <p class="pricing-info">100 GB storage</p>
+          <p class="pricing-info">VIP support</p>
+        </div>
+      </div>
+      <div class="card-btn">
         <button type="button" id="btn4" class="try-for-free">Try for Free</button>
       </div>
     </div>
   </main>
 
-  <footer id="date-comingSoon">
+  <!-- DATE COMING SOON -->
+  <section id="date-comingSoon">
     <div id="coming-soon">
       Coming <div id="future-date"></div>
     </div>
-
-    <div id="countdown-timer" role="timer" >
+    <!-- COUNTDOWN TIMER -->
+    <div id="countdown-timer" role="timer">
       <div class="box">
         <div id="days" class="countdown">47</div>
         <p class="days time-txt">days</p>
@@ -95,13 +114,14 @@
         <div id="sec" class="countdown">14</div>
         <p class="sec time-txt">sec</p>
       </div>
+
     </div>
 
     <button type="button" id="btn5" class="get-started-btn btn"><a class="btn-txt" href="sign-up.html">Get Started</a></button>
-  </footer>
+  </section>
   <!-- BACKGROUND-PATTERN -->
   <div id="bg-color-footer">
-  <div id="bg-pattern-footer"></div>
+    <div id="bg-pattern-footer"></div>
   </div>
 
 </body>
