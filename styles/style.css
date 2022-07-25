@@ -369,7 +369,7 @@ html {
 
 /* ========================================================================= */
 
-/* 5. MEDIA QUERIES */
+/* 5. MEDIA QUERIES | DESIGN FOR TABLET VIEW @ 768PX */
 @media only screen and (min-width: 670px) {
   /* HEADER | MQ */
   #bg-pattern-header {

@@ -86,13 +86,14 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   align-content: center;
   align-self: center;
 
   height: 465px;
   width: 320px;
   position: relative;
-  padding-left: 26px;
+  padding: 16px;
   margin-top: -129px;
   margin-bottom: 0;
 
@@ -146,7 +147,7 @@ label {
     transform: rotate(-45deg);
     top: 1em;
     margin-top: -10px;
-    }
+  }
 
 /* SELECTIONS DROPDOWN MENU */
 #selections {
@@ -250,6 +251,89 @@ label {
 }
 /* ================================================================= */
 /* 3. MEDIA QUERIES */
-/* @media only screen and (min-width: 670px) {
+@media only screen and (min-width: 670px) {
+  #bg-pattern-header {
+    display: none;
+  }
+  #logo {
+    align-self: normal;
+    position: absolute;
+    top: 0;
+    margin-top: 68px;
+    margin-left: 39px;
+  }
+  #office-lite-home {
+    top: 113px;
+    margin-bottom: 0;
+    width: 580px;
+  }
+  .header-p2 {
+    text-align: center;
+  }
 
-} */
+  /* COMING SOON SECTION | LAYOUT | TABLET VIEW MQ */
+  #date-comingSoon {
+    position: absolute;
+    top: 325px;
+    margin: 0;
+  }
+  #countdown-timer {
+    margin-top: 16px;
+  }
+
+  /* FORM | LAYOUT | TABLET VIEW MQ  */
+  #form {
+    height: 488px;
+    width: 445px;
+    position: relative;
+    top: 809px;
+    padding: 10px;
+    align-items: center;
+  }
+  /* PLACEHOLDERS & INPUT |TABLET VIEW MQ  */
+  .form-placeh, .option {
+    width: 360px;
+    margin-bottom: 24px;
+  }
+  /* MENU DROPDOWN ARROW | TABLET VIEW MQ  */
+  .select_wrap .default_option::before {
+    left: 19.6em;
+    }
+  /* DROPDOWN MENU SELECTIONS | TABLET VIEW MQ  */
+  #selections {
+    width: 330px;
+    margin-left: 1px;
+  }
+  .option1 {
+    width: 320px;
+  }
+  .option-label {
+    width: 95%;
+    margin-left: 0.5em;
+  }
+  #err-circle::after {
+    margin-right: 7px;
+  }
+
+  /* SUBMIT BUTTON | TABLET VIEW MQ */
+  #submit {
+    width: 83%;
+  }
+
+  /* FOOTER BG IMG */
+  #bg-color-footer {
+    position: relative;
+    height: 768px;
+    margin-top: 0;
+  }
+  #bg-pattern-footer {
+    height: 100%;
+    background-position: center 15.4%;
+    margin-top: -150px;
+  }
+  .sign-up-ft {
+    position: relative;
+    top: 556px;
+    overflow: clip !important;
+  }
+}
