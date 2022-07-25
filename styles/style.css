@@ -615,6 +615,9 @@ html {
     margin-top: 35px;
     margin-bottom: 8px;
   }
+  #card2 {
+    background-position: 50% bottom;
+  }
   
   
 }
