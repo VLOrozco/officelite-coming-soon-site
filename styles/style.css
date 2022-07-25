@@ -522,7 +522,7 @@ html {
 
 /* ===================================*/
 /* MEDIA QUERIES | DESIGN FOR DESKTOP VIEW @ 1440PX */
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1250px) {
   /* HEADER | MQ  DESKTOP VIEW */
   #bg-pattern-header {
     height: 1134px;
