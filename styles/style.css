@@ -34,6 +34,8 @@ body {
   letter-spacing: 0px;
   color: rgba(51, 57, 80, 1);
   text-align: center;
+
+  overflow-x: hidden;
 }
 
 html {
@@ -134,9 +136,6 @@ html {
 
 
 /* STANDARD LAYOUT */
-.header {
-  width: 100%;
-}
 .img {
   width: 100%;
 }
@@ -161,6 +160,9 @@ html {
   align-self: center;
 }
 
+.header {
+  width: 100%;
+}
 #office-lite-home {
   width: 100%;
   position: relative;
@@ -276,6 +278,7 @@ html {
   }
 
 /* FOOTER BACKGROUND | LAYOUT */
+
 #bg-color-footer,
 #bg-pattern-footer {
   height: 100%;
@@ -369,37 +372,44 @@ html {
 /* 5. MEDIA QUERIES */
 @media only screen and (min-width: 670px) {
   /* HEADER | MQ */
-  #office-lite-home {
-    flex-direction: row-reverse;
-  }
   #bg-pattern-header {
+    position: relative;
     object-fit: stretch;
     width: 666px;
     height: 666px;
     top: -166.5px;
-    left: 403px;
-    margin-bottom: 180px;
+    left: 373px;
   }
   #logo {
+    align-self: normal;
     margin-top: 70px;
     margin-left: 39px;
+    position: absolute;
   }
-  .header {
-    width: 100%;
+  #office-lite-home {
+    flex-direction: row-reverse;
+    position: absolute;
+    margin-top: 104px;
+
   }
   .header-txt {
-    width: 745px;
-    margin-top: 75px;
+    width: 45em;
+    margin-top: -45px;
     margin-left: 39px;
     text-align: left;
   }
   #header-p {
-    margin-top: -6px;
+    width: 100%;
+  }
+  #btn1 {
+    margin-left: -180px;
   }
   #header-illustration {
     width: 300px;
     height: 358px;
-    margin-top: 22px;
+    position: relative;
+    margin-top: 43px;
+    margin-left: -30px;
   }
 
   /* MAIN | FLEXBOX | MQ */
@@ -408,20 +418,23 @@ html {
     height: 1043px;
     margin: 0;
     padding: 0;
-    margin-top: 1em;
-    margin-left: 40px;
+    margin-top: 28px;
   }
   #card1, #card2, #card3 {
     position: relative;
     width: 77%;
     height: 216px;
     padding: 48px;
+    padding-top: 53px;
+    margin-left: 39px;
+    margin-right: 39px;
+    overflow: hidden;
   }
   #card1 {
     margin-bottom: 0;
   }
   #card2 {
-    margin: 25px 0;
+    margin: 25px 39px 25px 39px;
     background-position: 165% center;
     background-repeat: no-repeat;
   }
@@ -458,13 +471,14 @@ html {
 
   /* FOOTER DATE | MQ */
   #date-comingSoon {
-    margin-top: -60px;
+    margin-top: 3.2em;
     height: 300px;
   }
 
   /* FOOTER COUNTDOWN TIMER | MQ */
   #countdown-timer {
     width: 448px;
+    margin-top: 10px;
   }
   .box {
     margin-top: 1.6em;
@@ -482,16 +496,27 @@ html {
     margin-bottom: 16px;
   }
   #btn5 {
-    margin-top: 56px;
+    margin-top: 60px;
   }
 
   /* FOOTER BACKGROUND | MQ */
   #bg-color-footer {
     height: 790px;
     padding: 120px;
-  }
+    padding-bottom: 80px;
+    margin-top: -60em;
+    position: relative;
+    overflow-x: hidden;
+}
   #bg-pattern-footer {
-    margin-left: -200px;
+    margin-top: 118px;
+    margin-left: -235px;
     transform: rotate(-5deg);
+  }
+
+  /* BUTTON STYLES | MQ */
+  #btn1, #btn2, #btn3, #btn4, #btn4, #btn5, #btn6 {
+    font-size: 16px;
+    font-weight: 700;
   }
 }
