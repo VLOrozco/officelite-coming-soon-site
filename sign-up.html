@@ -21,7 +21,6 @@
   </script>
 </head>
 <body>
-
   <!-- BACKGROUND-PATTERN -->
   <div id="bg-pattern-header"></div>
   <!-- LOGO -->
@@ -41,7 +40,7 @@
       Coming <div id="future-date">4 NOV 2020</div>
     </div>
 
-    <div id="countdown-timer" role="timer" >
+    <div id="countdown-timer" role="timer">
       <div class="box">
         <div id="days" class="countdown">47</div>
         <p class="days time-txt">days</p>
@@ -62,8 +61,8 @@
         <p class="sec time-txt">sec</p>
       </div>
     </div>
-
   </section>
+
   <!-- FORM  -->
   <form action="#" id="form" class="form" name="form">
     <!-- NAME  -->
@@ -71,10 +70,10 @@
     <input type="text" id="name" class="form-placeh input" name="name" placeholder="Name" required></input>
     <!-- EMAIL  -->
     <label for="email">Email Address:</label>
-    <input type="email" id="email" class="form-placeh err-border input" name="email" placeholder="Email Address" required> <span id="err-circle"></span> </input>
+    <input type="email" id="email" class="form-placeh err-border input" name="email" placeholder="Email Address" required><span id="err-circle"></span></input>
     <!-- PACK  -->
     <label for="pack">Choose a pack:</label>
-    <div name="pack" id="pack" class="select_wrap form-placeh select active"  required>
+    <div name="pack" id="pack" class="select_wrap form-placeh select active" required>
       <ul value="basic" class="default_option option option1">
         <li>
           <div class="option-label basicPack">
@@ -88,24 +87,20 @@
         <li>
           <div value="basic" class="option-label option input basic">
             <span class="fontColor">Basic Pack</span>
-            <span class="pricing showCheck">Free</span> <!-- change name for showCheck -->
+            <span class="pricing showCheck">Free</span>
           </div>
-          <!-- <i class="fa-solid fa-angle-down"></i> -->
-          <!-- <i class="fa-solid fa-check"></i> -->
         </li>
         <li>
           <div value="pro" class="option-label option input pro">
             <span class="fontColor">Pro Pack</span>
-            <span class="pricing showCheck">$9.99</span> <!-- change name for showCheck -->
+            <span class="pricing showCheck">$9.99</span>
           </div>
-          <!-- <i class="fa-solid fa-check"></i> -->
         </li>
         <li>
           <div value="ultimate" class="option-label option input ultimate">
             <span class="fontColor">Ultimate Pack</span> 
-            <span class="pricing showCheck">$19.99</span> <!-- change name for showCheck -->
+            <span class="pricing showCheck">$19.99</span>
           </div>
-          <!-- <i class="fa-solid fa-check"></i> -->
         </li>
       </ul>
     </div>
@@ -121,10 +116,9 @@
     <button type="submit" value="submit" id="submit" class="btn" onclick="ValidateEmail(document.form.email)">Get on the list</button>
     <div id="validation"></div>
   </form>
-
   <!-- BACKGROUND-PATTERN -->
   <div id="bg-color-footer" class="sign-up-ft">
     <div id="bg-pattern-footer" class="ft-img"></div>
-    </div>
+  </div>
 </body>
 </html>
