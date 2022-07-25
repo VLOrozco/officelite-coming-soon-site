@@ -6,11 +6,9 @@
 3. MEDIA QUERIES
 */
 
-/* * {
-  list-style: none;
-} */
 /* ================================================================= */
 /* 1. TYPOGRAPHY */
+/* COUNTDOWN | TYPOGRAPHY */
 #coming-soon {
   color: #333950;
 }
@@ -56,21 +54,27 @@
 
 /* ================================================================= */
 /* 2. LAYOUT */
-body {
-  overflow-y: hidden;
-}
 #bg-pattern-header {
+  position: relative;
   overflow-y: hidden;
   height: 400px;
 }
+#logo {
+  position: relative;
+  top: -400px;
+}
 #office-lite-home {
-  top: 48px;
+  top: -353px;
   display: flex;
   align-self: center;
   margin-bottom: 52px;
 }
 
+/* COMING SOON SECTION | LAYOUT */
 #date-comingSoon {
+  position: absolute;
+  margin: 0;
+  margin-top: 420px;
   margin-bottom: 8px;
 }
 
@@ -87,8 +91,10 @@ label {
 
   height: 465px;
   width: 320px;
+  position: relative;
   padding-left: 26px;
-  margin-bottom: 86px;
+  margin-top: -129px;
+  margin-bottom: 0;
 
   background: rgb(255, 255, 255);
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
@@ -118,7 +124,7 @@ label {
   list-style: none;
 }
   .basicPack {
-    position: absolute;
+    position: relative;
   }
 
 /* MENU DROPDOWN ARROW */
@@ -239,8 +245,11 @@ label {
   transform: rotate(180deg);
 }
 .sign-up-ft {
-  top: 910px;
-  overflow: hidden;
+  top: 916px;
+  overflow-y: hidden;
 }
 /* ================================================================= */
 /* 3. MEDIA QUERIES */
+/* @media only screen and (min-width: 670px) {
+
+} */
