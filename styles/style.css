@@ -571,9 +571,9 @@ html {
 
   /* MAIN CARDS SECTION | MQ  DESKTOP VIEW */
   #main {
-    outline: 1px solid green;
     height: 508px;
     margin-top: -11.8em;
+    margin-bottom: 2em;
     display: flex;
     flex-direction: row;
   }
@@ -618,6 +618,28 @@ html {
   #card2 {
     background-position: 50% bottom;
   }
-  
-  
+
+  /* FOOTER DATE | MQ DESKTOP VIEW */
+  #date-comingSoon {
+    margin-top: -1.6em;
+    width: 1110px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #bg-color-footer {
+    height: 440px;
+    padding: 120px;
+    padding-bottom: 80px;
+    margin-top: -40em;
+    position: relative;
+    overflow: hidden;
+}
+  #bg-pattern-footer {
+    margin-top: -235px;
+    margin-left: -600px;
+    overflow: hidden;
+  }
 }
