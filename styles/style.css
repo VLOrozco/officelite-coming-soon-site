@@ -523,7 +523,7 @@ html {
 /* ===================================*/
 /* MEDIA QUERIES | DESIGN FOR DESKTOP VIEW @ 1440PX */
 @media only screen and (min-width: 1400px) {
-  /* HEADER | MQ */
+  /* HEADER | MQ  DESKTOP VIEW */
   #bg-pattern-header {
     height: 1134px;
     width: 1134px;
@@ -537,6 +537,7 @@ html {
   }
   #office-lite-home {
     margin-top: 113px;
+    margin-bottom: 0;
   }
   .header-txt {
     width: 730px;
@@ -568,5 +569,52 @@ html {
     margin-left: -100px;
   }
 
+  /* MAIN CARDS SECTION | MQ  DESKTOP VIEW */
+  #main {
+    outline: 1px solid green;
+    height: 508px;
+    margin-top: -11.8em;
+    display: flex;
+    flex-direction: row;
+  }
+  #card1, #card2, #card3 {
+    position: static;
+    width: 220px;
+    height: 79.1%;
+    padding: 64px;
+    padding-top: 40px;
+    margin: 0 15px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* CARD CONTENTS | MQ  DESKTOP VIEW */
+  .card-header, .card-body {
+    position: static;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .card-btn {
+    position: static;
+  }
+  .card-header {
+    margin-top: 0;
+    margin-bottom: 43px;
+  }
+    .price-title {
+      margin-top: 5px;
+      margin-bottom: 47px;
+    }
+    .user-info {
+      margin-top: 10px;
+    }
+  .card-body {
+    margin-top: 35px;
+    margin-bottom: 8px;
+  }
+  
+  
 }
