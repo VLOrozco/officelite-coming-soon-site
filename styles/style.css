@@ -23,8 +23,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -36,13 +34,15 @@ body {
   letter-spacing: 0px;
   color: rgba(51, 57, 80, 1);
   text-align: center;
-
-  overflow-x: hidden;
 }
 
 html {
   width: 100%;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 
@@ -134,52 +134,66 @@ html {
 
 
 /* STANDARD LAYOUT */
+.header {
+  width: 100%;
+}
+.img {
+  width: 100%;
+}
 #bg-pattern-header {
-  position: relative;
+  height: 100%;
+  width: 100%;
+
   background-image: url('../assets/home/bg-pattern-header.svg');
-  width: 458px;
-  height: 458px;
   background-size: contain;
   background-repeat: no-repeat;
-  left: -50px;
-  top: -169px;
-  margin-bottom: 600px;
+
+  position: absolute;
+  top: -130px;
+
+  overflow-x: hidden;
+  z-index: -5;
 }
 
 #logo {
-  position: absolute;
   width: 155px;
-  margin-top: 48px;
-  margin-bottom: 50px;
-  margin-left: 110px;
+  margin-top: 44px;
+  align-self: center;
 }
 
 #office-lite-home {
   width: 100%;
-  display: flex;
-  position: absolute;
-  top: 158px;
+  position: relative;
+  top: 83px;
 }
   #header-illustration {
-    width: 171px;
+    width: 190px;
     height: 218px;
+    margin-bottom: 0.13em;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
   }
   .header-txt {
-    width: 327px;
-    margin: 64px 24px 24px 24px;
-    position: relative;
-    top: -53.55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 21em;
   }
   #header-p {
+    width: 20em;
     margin-top: -3px;
     margin-bottom: 12px;
   }
-
-
+/* MAIN | LAYOUT */
 #main {
   width: 328px;
   height: 1588px;
-  margin: auto;
+  align-self: center;
+  margin-top: 180px;
+  margin-bottom: 100px;
 }
 
 #card1, #card2, #card3 {
@@ -192,7 +206,6 @@ html {
   padding-bottom: 40px;
 }
   #card1 {
-    margin-top: -165px;
     background-color: rgba(255, 255, 255, 1);
   }
   #card2 {
@@ -200,6 +213,7 @@ html {
     background-image: url('../assets/home/bg-pattern-pricing.svg');
     background-position: bottom center;
     margin-top: -33px;
+    margin-bottom: 33px;
   }
   #card3 {
     background-color: rgba(255, 255, 255, 1);
@@ -220,13 +234,13 @@ html {
   margin-bottom: 17px;
 }
 
-
+/* COMING SOON SECTION | LAYOUT */
 #date-comingSoon {
   display: flex;
   align-self: center;
   height: 254px;
   width: 328px;
-  margin-top: -32px;
+  margin-top: 5px;
   margin-bottom: 68px;
 }
 
@@ -261,22 +275,29 @@ html {
     margin-bottom: 8px;
   }
 
+/* FOOTER BACKGROUND | LAYOUT */
+#bg-color-footer,
+#bg-pattern-footer {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
 #bg-color-footer {
   height: 1248px;
-  width: 100%;
-  position: absolute;
   background-color: rgba(37, 41, 58, 1);
+  margin-top: 105em;
   z-index: -1;
-  bottom: 0;
-  padding-bottom: 80px;
 }
 #bg-pattern-footer {
   height: 1300px;
   width: 100%;
-  position: absolute;
+
   background-image: url('../assets/home/bg-pattern-footer.svg');
   background-repeat: no-repeat;
-  background-position: 50% 35%;
+  background-position: 50% 50%;
   object-fit: contain;
 }
 
@@ -310,7 +331,7 @@ html {
   mix-blend-mode: normal;
   border-radius: 28px;
   border: none;
-  cursor: pointer;
+  cursor: pointer !important;
 }
   #btn2, #btn3, #btn4 {
     margin-top: 16px;
@@ -323,6 +344,9 @@ html {
   }
 #btn3 {
   background-color: rgb(255, 255, 255);
+}
+#btn5 {
+  margin-top: 20px;
 }
 
 /* HOVER & ACTIVE STATES */
@@ -343,3 +367,131 @@ html {
 /* ========================================================================= */
 
 /* 5. MEDIA QUERIES */
+@media only screen and (min-width: 670px) {
+  /* HEADER | MQ */
+  #office-lite-home {
+    flex-direction: row-reverse;
+  }
+  #bg-pattern-header {
+    object-fit: stretch;
+    width: 666px;
+    height: 666px;
+    top: -166.5px;
+    left: 403px;
+    margin-bottom: 180px;
+  }
+  #logo {
+    margin-top: 70px;
+    margin-left: 39px;
+  }
+  .header {
+    width: 100%;
+  }
+  .header-txt {
+    width: 745px;
+    margin-top: 75px;
+    margin-left: 39px;
+    text-align: left;
+  }
+  #header-p {
+    margin-top: -6px;
+  }
+  #header-illustration {
+    width: 300px;
+    height: 358px;
+    margin-top: 22px;
+  }
+
+  /* MAIN | FLEXBOX | MQ */
+  #main {
+    width: 100%;
+    height: 1043px;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+    margin-left: 40px;
+  }
+  #card1, #card2, #card3 {
+    position: relative;
+    width: 77%;
+    height: 216px;
+    padding: 48px;
+  }
+  #card1 {
+    margin-bottom: 0;
+  }
+  #card2 {
+    margin: 25px 0;
+    background-position: 165% center;
+    background-repeat: no-repeat;
+  }
+  /* CARD CONTENTS | MQ */
+  .card-header {
+    position: relative;
+    width: 177px;
+    height: 150px;
+    margin-top: -5px;
+    text-align: left;
+  }
+  .card-body {
+    position: relative;
+    top: -128px;
+    right: -355px;
+    width: 230px;
+    height: 150px;
+    text-align: left;
+  }
+  .card-btn {
+    position: relative;
+    top: -158px;
+    width: 171px;
+    height: 57px;
+    margin: 0;
+  }
+  #btn2, #btn3, #btn4 {
+    margin: 0;
+    margin-top: 0.6em;
+  }
+  .price-txt {
+    margin-top: -5px;
+  }
+
+  /* FOOTER DATE | MQ */
+  #date-comingSoon {
+    margin-top: -60px;
+    height: 300px;
+  }
+
+  /* FOOTER COUNTDOWN TIMER | MQ */
+  #countdown-timer {
+    width: 448px;
+  }
+  .box {
+    margin-top: 1.6em;
+    height: 128px;
+    width: 100px;
+    border-radius: 13px;
+  }
+  .countdown {
+    font-size: 56px;
+    line-height: 64px;
+    margin-top: 17px;
+  }
+  .time-txt {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  #btn5 {
+    margin-top: 56px;
+  }
+
+  /* FOOTER BACKGROUND | MQ */
+  #bg-color-footer {
+    height: 790px;
+    padding: 120px;
+  }
+  #bg-pattern-footer {
+    margin-left: -200px;
+    transform: rotate(-5deg);
+  }
+}
