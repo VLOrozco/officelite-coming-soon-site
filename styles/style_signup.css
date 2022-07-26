@@ -337,3 +337,84 @@ label {
     overflow: clip !important;
   }
 }
+
+/* DESKTOP VIEW MEDIA QUERY */
+@media only screen and (min-width: 1250px) {
+  body {
+    height: 1000px;
+    overflow-y: hidden;
+  }
+  #logo {
+    margin-top: 81px;
+    margin-left: 165px;
+  }
+  #office-lite-home {
+    height: 236px;
+    width: 540px;
+    margin: 0;
+    margin-top: 145px;
+    margin-left: -35.5em;
+  }
+  .header-txt {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #header-title {
+    height: 128px;
+    width: 540px;
+
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .header-p2 {
+    text-align: left;
+  }
+
+  /* DATE - COMING SOON SECTION | MQ DESKTOP VIEW */
+  #date-comingSoon {
+    top: 475px;
+  }
+
+  /* FORM | LAYOUT | TABLET VIEW MQ  */
+  #form {
+    height: 674px;
+    width: 425px;
+    position: relative;
+    top: 365px;
+    left: 330px;
+    padding: 10px;
+    align-items: center;
+  }
+  #err-circle::after {
+    margin-right: 0;
+  }
+  #name {
+    margin-top: 20px; 
+  }
+  #submit {
+    margin-bottom: 20px;
+  }
+
+  /* FOOTER BG IMG */
+  #bg-color-footer {
+    position: relative;
+    top: -370px;
+    right: -1013px;
+    height: 100%;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100em;
+    overflow:  hidden;
+  }
+  #bg-pattern-footer {
+    height: 100%;
+    background-position: 50% -55%;
+    margin-left: 0;
+  }
+}
