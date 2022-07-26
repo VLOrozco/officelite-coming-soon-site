@@ -43,7 +43,7 @@ Users should be able to:
 <img src="assets/mobileView.png" alt="Officelite Coming Soon Site in tablet view" width="70%"/>
 
 ### Desktop View
-<img src="assets/desktopView.png" alt="Officelite Coming Soon Site in desktop view" width="100%"/>
+<img src="assets/desktopView.png" alt="Officelite Coming Soon Site in desktop view" width="120%"/>
 
 ---
 ## Built with
