@@ -28,7 +28,7 @@
   <!-- HEADER -->
   <header id="office-lite-home" class="header">
     <div class="header-txt header-txt2">
-      <h1 id="header-title" role="banner">Work smarter. Save time.</h1>
+      <h1 id="header-title" role="heading">Work smarter. Save time.</h1>
 
       <p id="header-p" class="header-p2" role="complementary">Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. We are moving into final development and getting ready for official launch soon.</p>
     </div>
@@ -75,7 +75,7 @@
     <input type="email" id="email" class="form-placeh err-border input" name="email" placeholder="Email Address" required><span id="err-circle"></span></input>
     <!-- PACK  -->
     <label for="pack">Choose a pack:</label>
-    <div name="pack" id="pack" class="select_wrap form-placeh select active" required>
+    <div name="pack" id="pack" class="select_wrap form-placeh select active" role="menu" required>
       <ul value="basic" class="default_option option option1">
         <li>
           <div class="option-label basicPack">
@@ -85,20 +85,20 @@
         </li>
       </ul>
 
-      <ul id="selections" class="select_ul active">
-        <li>
+      <ul id="selections" class="select_ul active" role="presentation">
+        <li role="menuitem">
           <div value="basic" class="option-label option input basic">
             <span class="fontColor">Basic Pack</span>
             <span class="pricing showCheck">Free</span>
           </div>
         </li>
-        <li>
+        <li role="menuitem">
           <div value="pro" class="option-label option input pro">
             <span class="fontColor">Pro Pack</span>
             <span class="pricing showCheck">$9.99</span>
           </div>
         </li>
-        <li>
+        <li role="menuitem">
           <div value="ultimate" class="option-label option input ultimate">
             <span class="fontColor">Ultimate Pack</span> 
             <span class="pricing showCheck">$19.99</span>
