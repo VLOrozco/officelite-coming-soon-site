@@ -545,8 +545,8 @@ html {
     align-items: start;
   }
   #header-title {
-    width: 730px;
     height: 200px;
+    width: 730px;
 
     font-size: 65px;
     font-weight: 600;
