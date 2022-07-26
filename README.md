@@ -16,7 +16,8 @@ This is a solution to the [Officelite coming soon site challenge on Frontend Men
   - [Links](#links)
   - [- Live Site URL: Officelite Coming Soon Site](#--live-site-url-officelite-coming-soon-site)
   - [Resources](#resources)
-  - [- How TO - Javascript Countdown Timer: w3schools](#--how-to---javascript-countdown-timer-w3schools)
+  - [- How to add, remove and toggle CSS classes in JavaScript: Atta](#--how-to-add-remove-and-toggle-css-classes-in-javascript-atta)
+  - [- An Ultimate Guide To CSS Pseudo Classes And Pseudo Elements: Ricardo Zea](#--an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements-ricardo-zea)
   - [Author](#author)
 
 ## Overview
@@ -66,6 +67,12 @@ Users should be able to:
 - JavaScript Style Guide: [w3schools](https://www.w3schools.com/js/js_conventions.asp)
 - Simple Javascript Countdown Tutorial: [YT - Dev Ed](https://www.youtube.com/watch?v=Rib69h2DOxg)
 - How TO - Javascript Countdown Timer: [w3schools](https://www.w3schools.com/howto/howto_js_countdown.asp)
+- CSS background-property: [w3schools](https://www.w3schools.com/cssref/css3_pr_background.asp)
+- CSS selectors: [w3schools](https://www.w3schools.com/cssref/css_selectors.asp)
+- How to add, remove and toggle CSS classes in JavaScript: [Atta](https://attacomsian.com/blog/javascript-add-remove-toggle-css-classes)
+---
+- How to create the Custom Select Box using HTML CSS and Jquery -- Custom Dropdown Box: [Coding Market](https://www.youtube.com/watch?v=41zkymkTCbc&list=PLwHlbQiyCYIF-2DqBshWk7ISpgmPFapND&index=49)
+- An Ultimate Guide To CSS Pseudo Classes And Pseudo Elements: [Ricardo Zea](https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/)
 ---
 
 ## Author
