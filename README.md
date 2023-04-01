@@ -1,6 +1,6 @@
 # Frontend Mentor - Officelite coming soon site solution
 
-This is a solution to the [Officelite coming soon site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/officelite-coming-soon-site-M4DIPNz8g). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Officelite coming soon site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/officelite-coming-soon-site-M4DIPNz8g). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,10 +14,7 @@ This is a solution to the [Officelite coming soon site challenge on Frontend Men
     - [Desktop View](#desktop-view)
   - [Built with](#built-with)
   - [Links](#links)
-  - [- Live Site URL: Officelite Coming Soon Site](#--live-site-url-officelite-coming-soon-site)
   - [Resources](#resources)
-  - [- How to add, remove and toggle CSS classes in JavaScript: Atta](#--how-to-add-remove-and-toggle-css-classes-in-javascript-atta)
-  - [- An Ultimate Guide To CSS Pseudo Classes And Pseudo Elements: Ricardo Zea](#--an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements-ricardo-zea)
   - [Author](#author)
 
 ## Overview
@@ -38,15 +35,19 @@ Users should be able to:
 ## Screenshots
 
 ### Mobile View
-<img src="assets/mobileView.png" alt="Officelite Coming Soon Site in mobile view" width="50%"/>
+
+<img src="assets/mobileView.png" alt="Officelite Coming Soon Site in mobile view" width="30%"/>
 
 ### Tablet View
-<img src="assets/mobileView.png" alt="Officelite Coming Soon Site in tablet view" width="70%"/>
+
+<img src="assets/mobileView.png" alt="Officelite Coming Soon Site in tablet view" width="50%"/>
 
 ### Desktop View
-<img src="assets/desktopView.png" alt="Officelite Coming Soon Site in desktop view" width="120%"/>
+
+<img src="assets/desktopView.png" alt="Officelite Coming Soon Site in desktop view" width="70%"/>
 
 ---
+
 ## Built with
 
 - HTML5
@@ -57,11 +58,15 @@ Users should be able to:
 - Mobile-first workflow
 
 ---
+
 ## Links
 
 - Solution URL: [Github Code](https://github.com/VLOrozco/officelite-coming-soon-site.git)
+
 - Live Site URL: [Officelite Coming Soon Site](https://vlorozco.github.io/officelite-coming-soon-site/)
+
 ---
+
 ## Resources
 
 - JavaScript Style Guide: [w3schools](https://www.w3schools.com/js/js_conventions.asp)
@@ -70,9 +75,9 @@ Users should be able to:
 - CSS background-property: [w3schools](https://www.w3schools.com/cssref/css3_pr_background.asp)
 - CSS selectors: [w3schools](https://www.w3schools.com/cssref/css_selectors.asp)
 - How to add, remove and toggle CSS classes in JavaScript: [Atta](https://attacomsian.com/blog/javascript-add-remove-toggle-css-classes)
----
 - How to create the Custom Select Box using HTML CSS and Jquery -- Custom Dropdown Box: [Coding Market](https://www.youtube.com/watch?v=41zkymkTCbc&list=PLwHlbQiyCYIF-2DqBshWk7ISpgmPFapND&index=49)
 - An Ultimate Guide To CSS Pseudo Classes And Pseudo Elements: [Ricardo Zea](https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/)
+
 ---
 
 ## Author
