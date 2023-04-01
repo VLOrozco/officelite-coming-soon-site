@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Tablet View
 
-<img src="assets/tabletView.png" alt="Officelite Coming Soon Site in tablet view" width="30%"/>
+<img src="assets/tabletView.png" alt="Officelite Coming Soon Site in tablet view" width="50%"/>
 
 ### Desktop View
 
